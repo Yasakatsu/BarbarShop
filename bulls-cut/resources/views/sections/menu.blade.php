@@ -1,5 +1,4 @@
-        <section id="menu" class="py-8 px-5 sm:text-xl"
-            style="background-image: url(' {{ asset('/images/S__10690573_0.jpg') }}');">
+<section id="menu" class="bg-contain bg-center bg-no-repeat py-8 px-5 sm:text-xl overflow-hidden rounded-lg"            style="background-image: url(' {{ asset('/images/S__10690573_0.jpg') }}');">
             <div>
                 <h2 class="text-3xl font-bold font-sans">Menu</h2>
                 <h3 class="pb-8">PICK UP COURSE</h3>
