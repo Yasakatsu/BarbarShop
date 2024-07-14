@@ -1,6 +1,7 @@
 <header id="header" class="py-6">
     <div class="container md:flex mx-auto justify-between items-center">
-        <p class="flex justify-center font-bold md:hidden pb-4">さあ、大人の男の空間へ</p>
+
+        <p class="flex  justify-center font-bold md:hidden pb-4">さあ、大人の男の空間へ</p>
         <a id="header-img" href="{{ route('main') }}">
             <img src="{{ asset('/images/BULLSCUT_logo.png') }}" alt="Header Image"
                 class="w-40 md:w-44 lg:w-44 mx-auto md:pr-4 items-center" style="filter: brightness(0) invert(1);">
@@ -12,8 +13,11 @@
             </div>
             <!-- リンクタグ -->
             <div id="header-link"
-                :class="{ 'hidden': !
-                    open, 'flex flex-col items-center justify-center bg-stone-900 bg-opacity-90 h-screen w-full fixed top-0 tracking-widest': open }"
+                :class="{
+                    'hidden': !
+                        open,
+                    'flex flex-col items-center justify-center bg-stone-900 bg-opacity-90 h-screen w-full fixed top-0 tracking-widest': open
+                }"
                 class="md:flex md:items-center md:justify-between md:space-x-10 font-bold md:text-lg font-sans">
                 <a href="https://beauty.hotpepper.jp/slnH000520434/">
                     <button
@@ -30,7 +34,7 @@
                     @click="open = false">Menu</a>
                 <a href="#hours" class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-4"
                     @click="open = false">
-                    <span class="block md:hidden">OPEN/CLOSE</span>
+                    <span class="block md:hidden text-3xl md:text-2xl">OPEN/CLOSE</span>
                     <span class="hidden md:block">OPEN</span>
                 </a>
                 <a href="#address"
@@ -39,6 +43,11 @@
                 <a href="https://www.instagram.com/bullscut0205?igsh=bjd6ejFxczM2cWJt" target="_blank"
                     class="fa-brands fa-instagram fa-2x hover:text-selected-text duration-300 text-5xl my-4"
                     @click="open = false"></a>
+                <!-- 閉じる項目の追加 -->
+                <a href="#"
+                    class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-8 md:hidden fixed top-10 right-7 mt-2.5 mr-2.5"
+                    @click="open = false"><i class="fa-solid fa-xmark fa-xl "></i></a>
+
             </div>
         </div>
         <!-- Reserve -->
