@@ -51,6 +51,18 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql:mysql
+        ports:
+            - 8080:80
+        environment:
+            MYSQL_USERNAME: '${DB_USERNAME}'
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            PMA_HOST: mysql
+        networks:
+            - sail
     redis:
         image: 'redis:alpine'
         ports:
@@ -82,7 +94,7 @@ services:
                 - wget
                 - '--no-verbose'
                 - '--spider'
-                - 'http://127.0.0.1:7700/health'
+                - 'http://localhost:7700/health'
             retries: 3
             timeout: 5s
     mailpit:
