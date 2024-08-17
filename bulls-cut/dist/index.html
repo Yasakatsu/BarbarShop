@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLS CUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://localhost/BULLSCUT_logomark.ico" />
+    <link rel="shortcut icon" href="https://localhost/BULLSCUT_logomark.png" />
+    <script src="https://kit.fontawesome.com/7974e457e6.js" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="https://localhost/build/assets/app-VbeQ16uy.css" /><link rel="modulepreload" href="https://localhost/build/assets/app-CH09qwMe.js" /><link rel="stylesheet" href="https://localhost/build/assets/app-VbeQ16uy.css" /><script type="module" src="https://localhost/build/assets/app-CH09qwMe.js"></script></head>
+
+<body class="bg-stone-900 text-white font-serif text-sm md:text-md">
+    <header id="header" class="py-6">
+    <div class="container md:flex mx-auto justify-between items-center">
+
+        <p class="flex  justify-center font-bold md:hidden pb-4">さあ、大人の男の空間へ</p>
+        <a id="header-img" href="https://localhost">
+            <img src="https://localhost/images/BULLSCUT_logo.png" alt="Header Image"
+                class="w-40 md:w-44 lg:w-44 mx-auto md:pr-4 items-center" style="filter: brightness(0) invert(1);">
+        </a>
+        <div x-data="{ open: false }" @click.away="open = false">
+            <!-- ハンバーガーメニュー -->
+            <div class="md:hidden flex justify-center pt-10" @click="open = !open">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <!-- リンクタグ -->
+            <div id="header-link"
+                :class="{
+                    'hidden': !
+                        open,
+                    'flex flex-col items-center justify-center bg-stone-900 bg-opacity-90 h-screen w-full fixed top-0 tracking-widest': open
+                }"
+                class="md:flex md:items-center md:justify-between md:space-x-10 font-bold md:text-lg font-sans">
+                <a href="https://beauty.hotpepper.jp/slnH000520434/">
+                    <button
+                        class="px-8 py-2 bg-theme-color hover:bg-purple-600 duration-300 rounded-sm text-3xl md:text-2xl my-4"
+                        @click="open = false">Reserve</button>
+                </a>
+                <a href="#concept"
+                    class="hover:text-selected-text transition-all md:duration-300 text-3xl md:text-2xl my-4"
+                    @click="open = false">Concept</a>
+                <a href="#service"
+                    class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-4"
+                    @click="open = false">Service</a>
+                <a href="#menu" class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-4"
+                    @click="open = false">Menu</a>
+                <a href="#hours" class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-4"
+                    @click="open = false">
+                    <span class="block md:hidden text-3xl md:text-2xl">OPEN/CLOSE</span>
+                    <span class="hidden md:block">OPEN</span>
+                </a>
+                <a href="#address"
+                    class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-4"
+                    @click="open = false">Address</a>
+                <a href="https://www.instagram.com/bullscut0205?igsh=bjd6ejFxczM2cWJt" target="_blank"
+                    class="fa-brands fa-instagram fa-2x hover:text-selected-text duration-300 text-5xl my-4"
+                    @click="open = false"></a>
+                <!-- 閉じる項目の追加 -->
+                <a href="#"
+                    class="hover:text-selected-text transition-all duration-300 text-3xl md:text-2xl my-8 md:hidden fixed top-10 right-7 mt-2.5 mr-2.5"
+                    @click="open = false"><i class="fa-solid fa-xmark fa-xl "></i></a>
+
+            </div>
+        </div>
+        <!-- Reserve -->
+        <div class="md:hidden flex justify-center pt-10">
+            <button class="px-8 py-2 bg-theme-color hover:bg-purple-600 duration-300 rounded-sm font-bold">
+                <a href="https://beauty.hotpepper.jp/slnH000520434/">ご予約はコチラ</a>
+            </button>
+        </div>
+    </div>
+</header>
+    <main class="py-8">
+        <section id="concept" class="bg-cover sm:bg-contain sm:bg-right bg-no-repeat py-8 px-5 sm:text-xl "
+    style="background-image: url(' https://localhost/images/S__10690572_0.jpg');">
+    <h2 id="concept-title" class="text-3xl pb-8 font-bold font-sans">
+        Concept
+    </h2>
+    <div id="concept-main" class="bg-stone-900 sm:bg-none bg-opacity-40 sm:bg-opacity-0 rounded-lg px-4 py-4 text-bold leading-10 sm:tracking-widest  ">
+        <p>完全個室のメンズ専門理容室。<br>
+            ゆったりと落ち着ける空間には<br>
+            フルフラットチェアをご用意。<br>
+            シャンプーやヘッドスパ、<br>
+            シェービングの際には灯りを調節し<br>
+            心も体もしっかりと安らぐ上質空間を演出。<br>
+            平日は22時最終受付で仕事帰りの<br>
+            ビジネスマンにおすすめのサロンです。<br>
+        </p>
+    </div>
+</section>        <section id="service" class="sm:text-xl md:bg-right py-8 px-5 "
+            style="background-image: url(' https://localhost/images/S__10690566_0.jpg');">
+
+            <div class="text-right ">
+                <h2 class="text-3xl font-bold font-sans">Service</h2>
+                <h3 class="pb-8">BULLS CUTのこだわり</h3>
+                <div class="leading-10 tracking-widest  mb-5">
+                    <h5 class="text-xl">OPEN LATE</h5>
+                    <h4 class="font-bold text-accent-color">平日夜型サロン(23時CLOSE)</h4>
+                    <hr class=" w-10/12 md:w-3/12 ml-auto  ">
+                    <p>仕事帰りのビジネスマンにおすすめのサロン</p>
+                </div>
+                <div class="leading-7 mb-5">
+                    <h5 class="text-xl">ORDERMADE MENU</h5>
+                    <h4 class="font-bold text-accent-color">オーダーメイドコースをご用意</h4>
+                    <hr class=" w-10/12 md:w-3/12 ml-auto  ">
+                    <p>お客様に合わせたメニューをご提案</p>
+                </div>
+                <div class="leading-7 mb-5">
+                    <h5 class="text-xl">PRIVATE ROOMS</h5>
+                    <h4 class="font-bold text-accent-color">全席完全個室</h4>
+                    <hr class=" w-10/12 md:w-3/12 ml-auto  ">
+                    <p>周りの目が気にならないプライベート空間</p>
+                </div>
+                <div class="leading-7 mb-5">
+                    <h5 class="text-xl">FLAT CHAIR</h5>
+                    <h4 class="font-bold text-accent-color">フルフラットチェアで Shampoo ＆ Shaving</h4>
+                    <hr class=" w-10/12 md:w-3/12 ml-auto  ">
+                    <p>理容室ならではのシェービングをご体感ください</p>
+                </div>
+                <div class="leading-7 mb-5">
+                    <h5 class="text-xl">SHAMPOO BOWLS</h5>
+                    <h4 class="font-bold text-accent-color">最新ヘッドスパ専用シャンプー台"yumeシャン"導入</h4>
+                    <hr class=" w-10/12 md:w-3/12 ml-auto  ">
+                    <p>首や腰の負担の少ない当店自慢の最新機器を導入</p>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="bg-contain bg-center bg-no-repeat py-8 px-5 sm:text-xl overflow-hidden rounded-lg"
+    style="background-image: url(' https://localhost/images/S__10690573_0.jpg');">
+    <div>
+        <h2 class="text-3xl font-bold font-sans">Menu</h2>
+        <h3 class="pb-8">PICK UP COURSE</h3>
+        <div class=" bg-stone-900 bg-opacity-60 px-4 py-4 ">
+            <div class="mb-5 p-1 ">
+                <div class="flex items-center  space-x-28 sm:justify-between sm:space-x-0 ">
+                    <h4>デザインカット コース</h4>
+                    <p class="tracking-widest">¥５，０００ + tax</p>
+                </div>
+                <p class="text-accent-color tracking-widest ">Cut + Shampoo</p>
+            </div>
+            <div class="mb-5">
+                <div class="flex items-center  space-x-24 sm:justify-between sm:space-x-0 ">
+                    <h4>BARBERベーシック コース</h4>
+                    <p class="tracking-widest">¥６，０００ + tax</p>
+                </div>
+                <p class="text-accent-color tracking-widest ">Cut + Shaving</p>
+            </div>
+            <div class="mb-5">
+                <div class="flex items-center  space-x-32 sm:justify-between sm:space-x-0">
+                    <h4 class="mx-1">スカルプケア コース</h4>
+                    <p class="tracking-widest ">¥６，０００ + tax</p>
+                </div>
+                <p class="text-accent-color tracking-widest ">Cut + HeadSpa</p>
+            </div>
+            <div class="mb-5">
+                <div class="flex items-center  space-x-28 sm:justify-between sm:space-x-0 ">
+                    <h4>フェイシャルケア コース</h4>
+                    <p class="tracking-widest">¥９，０００ + tax</p>
+                </div>
+                <p class="text-accent-color tracking-widest">Cut + Shaving + Option</p>
+            </div>
+            <div class=" flex items-center  space-x-22 sm:justify-between sm:space-x-0">
+                <h4>オーダーメイドプラチナ コース</h4>
+                <p class="tracking-widest ">¥１１，０００ + tax</p>
+            </div>
+            <p class="text-accent-color tracking-widest">Cut + Ordermade（１２０分）</p>
+            <p class="text-red-500 tracking-widest text-xs">※お客様に合うメニューを個別にご提案いたします</p>
+
+            <div class="mb-5">
+                <h4 class="underline underline-offset-8 decoration-1">※その他 コースメニュー有り</h4>
+            </div>
+
+            <div class="mb-4 border-b-4 border-dotted w-full sm:w-7/12"></div>
+
+            <h2 class="mb-8 text-3xl font-bold font-sans pt-4">OTHER</h2>
+            <div class="mb-5 p-1">
+                <div class="flex items-center justify-between ">
+                    <h4>カラーリング</h4>
+                    <p class="tracking-widest">¥５，０００ + tax~</p>
+                </div>
+                <p class="text-accent-color tracking-widest">Only Coloring</p>
+            </div>
+            <div class="flex items-center  justify-between">
+                <h4>パーマ</h4>
+                <p class="tracking-widest">¥５，０００ + tax ~</p>
+            </div>
+            <p class="text-accent-color tracking-widest">Only Permanent</p>
+        </div>
+    </div>
+
+</section>
+<hr>
+        <section id="reserve" class="py-20 ">
+            <h2 class="text-3xl font-black mb-4 text-center">Reserve</h2>
+            <div class="text-center">
+                <a href="https://beauty.hotpepper.jp/slnH000520434/"
+                    class=" bg-theme-color  hover:bg-purple-600 duration-300 rounded-md font-bold  py-2 px-4 ">ご予約はこちらから</a>
+            </div>
+        </section>
+        <section id="hours" class=" sm:text-xl text-center py-8 px-5"
+            style="background-image: url('https://localhost/images/BULLSCUT_logotype.png'); background-size: 50%; background-repeat: no-repeat; background-position: left 30px top 40px">
+            <div>
+                <h2 class="text-3xl pb-8 font-bold font-sans">Opening Hours</h2>
+                <div>
+                    <div class="pb-4">
+                        <p class="font-semibold">Monday - Friday</p>
+                        <p class="">12:00 - 23:00 (Last Order at 22:00 )</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Weekends and Holidays </p>
+                        <p>10:00 - 21:00 (Last Order at 20:00 )</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="address" class="text-center stext-lg sm:text-xl py-4">
+            <div
+                style="background-image: url('https://localhost/images/BULLSCUT_logotype.png'); background-size: 50%; background-repeat: no-repeat; background-position:center ">
+
+                <h2 class="text-3xl pb-4 font-bold font-sans">Adress
+                </h2>
+                <address class="pb-1 font-sans">
+                    〒 134 - 0083<br>
+                    東京都 江戸川区 中葛西 2-27-11 サニーレジデンス1F<br>
+                    TEL: 03 - 6808 -0838
+                </address>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.837877080688!2d139.8695653152589!3d35.65858498019867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5856e912bb%3A0x7f3281cba6201b2e!2s2-ch%C5%8Dme-27-11%20Nakakasai%2C%20Edogawa%20City%2C%20Tokyo%20134-0083%2C%20Japan!5e0!3m2!1sja!2sjp&hl=ja"
+                style="border:0;" allowfullscreen="" loading="lazy" class="block mx-auto w-8/12 h-80"></iframe>
+            <a class="text-xs md:text-lg underline hover:text-violet-500"
+                href="https://www.google.com/maps/place/%E3%83%8A%E3%83%93%E3%83%91%E3%83%BC%E3%82%AF+%E4%B8%AD%E8%91%9B%E8%A5%BF%E7%AC%AC%EF%BC%94%EF%BC%93/@35.667624,139.8723594,20z/data=!4m6!3m5!1s0x601887ec5f9643f5:0xe5b9cc5b3719127!8m2!3d35.667624!4d139.872573!16s%2Fg%2F11dxqk3x0y?hl=ja&entry=ttu">
+                ※お車でお越しの方は店舗向かいの有料駐車場をご利用ください。
+            </a>
+        </section>
+        <section id="social" class="text-center sm:text-xl"
+            style="background-image: url('https://localhost/images/BULLSCUT_logotype.png'); background-size: 50%; background-repeat: no-repeat; background-position: right 10px top 10px;">
+
+            <div class="pt-8">
+                <a href="https://www.instagram.com/bullscut0205?igsh=bjd6ejFxczM2cWJt" target="_blank"
+                    class="fa-brands fa-instagram fa-5x hover:text-violet-500"></a>
+                <h2 class="font-bold font-sans">Follow Us on Instagram</h2>
+                <p class="py-2">こちらから随時ヘアスタイルをご覧いただけます</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-stone-900 py-4 text-center font-sans">
+        <div>&copy; 2024 BULLS CUT. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
